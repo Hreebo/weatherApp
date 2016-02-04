@@ -1,0 +1,44 @@
+{
+   "coord":{
+      "lon":18.24,
+      "lat":49.73
+   },
+   "weather":[
+      {
+         "id":500,
+         "main":"Rain",
+         "description":"light rain",
+         "icon":"10d"
+      }
+   ],
+   "base":"cmc stations",
+   "main":{
+      "temp":275.881,
+      "pressure":986.06,
+      "humidity":72,
+      "temp_min":275.881,
+      "temp_max":275.881,
+      "sea_level":1031.78,
+      "grnd_level":986.06
+   },
+   "wind":{
+      "speed":5.66,
+      "deg":282.502
+   },
+   "rain":{
+      "3h":0.1275
+   },
+   "clouds":{
+      "all":48
+   },
+   "dt":1454593842,
+   "sys":{
+      "message":0.0037,
+      "country":"CZ",
+      "sunrise":1454566529,
+      "sunset":1454600824
+   },
+   "id":3072661,
+   "name":"Krmelin",
+   "cod":200
+}

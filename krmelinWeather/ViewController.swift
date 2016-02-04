@@ -9,17 +9,27 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    @IBOutlet weak var tempLbl: UILabel!
+    @IBOutlet weak var descLbl: UILabel!
+    
+    var krmelinTemp: krmelin!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        krmelinTemp = krmelin(nameLm: "Hezky")
+        
+        krmelinTemp.downloadWeather { () -> () in
+        self.updateUI()
+       
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func updateUI() {
+        tempLbl.text = "\(krmelinTemp.temp) Celsia"
+        descLbl.text = "\(krmelinTemp.desc)"
     }
-
-
 }
 

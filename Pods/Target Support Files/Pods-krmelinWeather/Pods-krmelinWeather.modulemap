@@ -1,0 +1,6 @@
+framework module Pods_krmelinWeather {
+  umbrella header "Pods-krmelinWeather-umbrella.h"
+
+  export *
+  module * { export * }
+}

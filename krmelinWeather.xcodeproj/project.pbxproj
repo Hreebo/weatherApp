@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		551566131C63C15C00D3745A /* krmelin_weather.json in Resources */ = {isa = PBXBuildFile; fileRef = 551566121C63C15C00D3745A /* krmelin_weather.json */; };
 		556646FF1C6355AC0086163D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556646FE1C6355AC0086163D /* AppDelegate.swift */; };
 		556647011C6355AC0086163D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556647001C6355AC0086163D /* ViewController.swift */; };
 		556647041C6355AC0086163D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 556647021C6355AC0086163D /* Main.storyboard */; };
 		556647061C6355AC0086163D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 556647051C6355AC0086163D /* Assets.xcassets */; };
 		556647091C6355AC0086163D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 556647071C6355AC0086163D /* LaunchScreen.storyboard */; };
+		556647121C635B090086163D /* krmelin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556647111C635B090086163D /* krmelin.swift */; };
+		556647181C6381500086163D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556647171C6381500086163D /* Constants.swift */; };
+		CAAC13E7ED10BBC8F9802893 /* Pods_krmelinWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAD14F46B0D286928B37F31 /* Pods_krmelinWeather.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F52733A0C2AF163F8373575 /* Pods-krmelinWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-krmelinWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-krmelinWeather/Pods-krmelinWeather.debug.xcconfig"; sourceTree = "<group>"; };
+		551566121C63C15C00D3745A /* krmelin_weather.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = krmelin_weather.json; sourceTree = "<group>"; };
 		556646FB1C6355AC0086163D /* krmelinWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = krmelinWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		556646FE1C6355AC0086163D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		556647001C6355AC0086163D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,10 @@
 		556647051C6355AC0086163D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		556647081C6355AC0086163D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5566470A1C6355AC0086163D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		556647111C635B090086163D /* krmelin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = krmelin.swift; sourceTree = "<group>"; };
+		556647171C6381500086163D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ABAD14F46B0D286928B37F31 /* Pods_krmelinWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_krmelinWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E39AE2684D666D948F8B00A7 /* Pods-krmelinWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-krmelinWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-krmelinWeather/Pods-krmelinWeather.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAAC13E7ED10BBC8F9802893 /* Pods_krmelinWeather.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,8 @@
 			children = (
 				556646FD1C6355AC0086163D /* krmelinWeather */,
 				556646FC1C6355AC0086163D /* Products */,
+				E7C8E186AA5FC580404952FB /* Pods */,
+				FDBDB02FA21C356739623EFF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +67,74 @@
 		556646FD1C6355AC0086163D /* krmelinWeather */ = {
 			isa = PBXGroup;
 			children = (
+				556647101C635AFD0086163D /* Resources */,
+				556647141C6372070086163D /* View */,
+				556647131C6372010086163D /* Model */,
+				556647161C6381300086163D /* Util */,
+				556647151C63720D0086163D /* Controller */,
 				556646FE1C6355AC0086163D /* AppDelegate.swift */,
-				556647001C6355AC0086163D /* ViewController.swift */,
 				556647021C6355AC0086163D /* Main.storyboard */,
 				556647051C6355AC0086163D /* Assets.xcassets */,
 				556647071C6355AC0086163D /* LaunchScreen.storyboard */,
 				5566470A1C6355AC0086163D /* Info.plist */,
 			);
 			path = krmelinWeather;
+			sourceTree = "<group>";
+		};
+		556647101C635AFD0086163D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				551566121C63C15C00D3745A /* krmelin_weather.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		556647131C6372010086163D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				556647111C635B090086163D /* krmelin.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		556647141C6372070086163D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		556647151C63720D0086163D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				556647001C6355AC0086163D /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		556647161C6381300086163D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				556647171C6381500086163D /* Constants.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		E7C8E186AA5FC580404952FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F52733A0C2AF163F8373575 /* Pods-krmelinWeather.debug.xcconfig */,
+				E39AE2684D666D948F8B00A7 /* Pods-krmelinWeather.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FDBDB02FA21C356739623EFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABAD14F46B0D286928B37F31 /* Pods_krmelinWeather.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +144,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5566470D1C6355AC0086163D /* Build configuration list for PBXNativeTarget "krmelinWeather" */;
 			buildPhases = (
+				30D5564D61D2D10F9048E301 /* Check Pods Manifest.lock */,
 				556646F71C6355AC0086163D /* Sources */,
 				556646F81C6355AC0086163D /* Frameworks */,
 				556646F91C6355AC0086163D /* Resources */,
+				3A79DE94F9E36CCB2CAC39BC /* Embed Pods Frameworks */,
+				B8E8C5438F93042702C12DA5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				556647091C6355AC0086163D /* LaunchScreen.storyboard in Resources */,
+				551566131C63C15C00D3745A /* krmelin_weather.json in Resources */,
 				556647061C6355AC0086163D /* Assets.xcassets in Resources */,
 				556647041C6355AC0086163D /* Main.storyboard in Resources */,
 			);
@@ -131,13 +208,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		30D5564D61D2D10F9048E301 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3A79DE94F9E36CCB2CAC39BC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-krmelinWeather/Pods-krmelinWeather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8E8C5438F93042702C12DA5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-krmelinWeather/Pods-krmelinWeather-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		556646F71C6355AC0086163D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				556647181C6381500086163D /* Constants.swift in Sources */,
 				556647011C6355AC0086163D /* ViewController.swift in Sources */,
 				556646FF1C6355AC0086163D /* AppDelegate.swift in Sources */,
+				556647121C635B090086163D /* krmelin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +375,7 @@
 		};
 		5566470E1C6355AC0086163D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F52733A0C2AF163F8373575 /* Pods-krmelinWeather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = krmelinWeather/Info.plist;
@@ -259,6 +387,7 @@
 		};
 		5566470F1C6355AC0086163D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E39AE2684D666D948F8B00A7 /* Pods-krmelinWeather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = krmelinWeather/Info.plist;
@@ -287,6 +416,7 @@
 				5566470F1C6355AC0086163D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
